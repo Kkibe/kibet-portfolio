@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1150px;
+  height: 100%;
+  padding: 4rem 1rem;
+  color: #ECECEC;
+}
+
+.yellow-text {
+  color: #EEF205;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  padding-right: 3.5rem;
+  background: #000000;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar li {
+  padding: 1rem 0 1rem 2.5rem;
+  list-style: none;
+}
+#navbar .nav-link {
+  transition: 0.1s linear;
+  font-size: 1.1rem;
+  color: #ECECEC;
+  text-decoration: none;
+  font-weight: 500;
+}
+#navbar .nav-link:hover {
+  color: #EEF205;
+}
+#navbar .nav-link:active {
+  color: #bdc004;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #000000 0%, rgba(8, 8, 8, 0.5) 20%, rgba(8, 8, 8, 0.6) 80%, #000000 100%), url(https://i.imgur.com/qhNzTM0.jpg) no-repeat center center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+#welcome-section .container {
+  gap: 1rem;
+}
+#welcome-section .title {
+  font-weight: 500;
+  font-size: 4rem;
+  margin-bottom: -1rem;
+}
+#welcome-section .description {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cta .btn {
+  transition: 0.1s linear;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #EEF205;
+  border: 2px solid #EEF205;
+  border-radius: 1000px;
+}
+.cta .btn:hover {
+  background: #EEF205;
+  color: #000000;
+}
+.cta .btn:active {
+  border: 2px solid #bdc004;
+  background: #bdc004;
+}
+.cta .social {
+  transition: 0.05s linear;
+  color: #ECECEC;
+}
+.cta .social:hover {
+  color: #EEF205;
+}
+.cta .social:active {
+  color: #bdc004;
+}
+
+#about {
+  height: auto;
+  background: #000000;
+}
+#about p:first-of-type {
+  margin-bottom: 0.9rem;
+}
+
+#projects {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #000000 0%, rgba(8, 8, 8, 0.5) 20%, rgba(8, 8, 8, 0.6) 80%, #000000 100%), url(https://i.imgur.com/0y4QxHh.jpg) no-repeat center center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#project-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.project-tile {
+  background: #ECECEC;
+  color: #000000;
+  height: auto;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  border-bottom: 3px solid #000000;
+}
+
+.documentation-image {
+  background: url(https://github.com/K-kibet/weather-app/blob/main/src/assets/Screenshot%202022-09-24%208.07.56%20PM.png) no-repeat top left;
+  background-size: cover;
+}
+
+.landing-image {
+  background: url(https://github.com/K-kibet/weather-app/blob/main/src/assets/Screenshot%202022-09-24%208.07.56%20PM.png) no-repeat top left;
+  background-size: cover;
+}
+
+.survey-image {
+  background: url(https://i.gyazo.com/4bb879a4a935c7758e0da7a7f6bc5472.png) no-repeat top left;
+  background-size: cover;
+}
+
+.tribute-image {
+  background: url(https://i.gyazo.com/10aa6d5318e8b15684c65ea7e9abec41.png) no-repeat top left;
+  background-size: cover;
+}
+
+.project-details {
+  padding: 0.5rem;
+}
+.project-details .project-title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-links {
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.project-links .link {
+  transition: 0.1s linear;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #000000;
+  border-radius: 1000px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+.project-links .link:hover {
+  background: #000000;
+  color: #ECECEC;
+}
+.project-links .link:active {
+  color: black;
+}
+
+#contact {
+  height: auto;
+  background: #000000;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  color: white;
+}
+.form-container label {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.form-container input, .form-container textarea {
+  width: 100%;
+  background: #060606;
+  border: none;
+  border-bottom: 2px solid #EEF205;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.25rem;
+  color: #EEF205;
+  font-size: 1rem;
+  resize: vertical;
+  max-height: 250px;
+}
+.form-container .submit-btn {
+  float: right;
+  width: 40%;
+  background: none;
+  transition: 0.1s linear;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #EEF205;
+  border: 2px solid #EEF205;
+  border-radius: 1000px;
+}
+.form-container .submit-btn:hover {
+  background: #EEF205;
+  color: #000000;
+}
+.form-container .submit-btn:active {
+  border: 2px solid #bdc004;
+  background: #bdc004;
+}
+
+@media screen and (max-width: 756px) {
+  #navbar {
+    justify-content: center;
+    padding: 0;
+  }
+  #navbar li:first-of-type {
+    padding-left: 0;
+  }
+
+  .container {
+    padding: 3rem 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  #navbar {
+    position: relative;
+    background: #000000;
+  }
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar li {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .container {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .container .section-title {
+    font-size: 2.5rem;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .cta .btn {
+    flex-basis: 90%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .cta .social {
+    padding: 0 1rem;
+  }
+
+  #about p {
+    text-align: justify;
+  }
+
+  .form-container .input-block {
+    text-align: left;
+  }
+  .form-container .submit-btn {
+    width: 100%;
+  }
+}
