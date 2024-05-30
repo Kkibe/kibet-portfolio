@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Frontend developer </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<script src="https://kit.fontawesome.com/a33a0316b0.js" crossorigin="anonymous"></script>
-
-<title>Senatrius - Front-End developer portfolio</title><link rel="stylesheet" href="./style.css">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FFBD59">
+  <meta name="description" content="Kibet Korir is A Front-end web developer with 3+ years of experience. Explore my portfolio & resume to learn more"/>
+  <meta name="keywords" content="projects, services, news, portfolio, Productivity, freelance, web-development, react">
+  <meta name="author" content="Kibet Korir">
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/logo512.png" />
+  <link rel="apple-touch-icon" href="assets/logo192.png" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="assets/manifest.json" />
+  <title>Kibet Korir - Frontend Web developer </title>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-<body>
-  <nav id="navbar">
-    <ul>
-      <li><a href="#welcome-section" class="nav-link">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
+  <video class='video' autoPlay loop muted>
+    <source src='./assets/bg.mp4' type='video/mp4' />
+  </video>
+  <nav>
+    <a href="#welcome-section" title="home">Home</a>
+    <a href="#about" title="about me">About</a>
+    <a href="#projects" title="projects">Projects</a>
+    <a href="#contact" title="contact">Contact</a>
   </nav>
   <div id="welcome-section">
     <div class="container">
       <h1 class="title">Hi, I'm <span class="yellow-text">KIBET</span></h1>
-      <h3 class="description">Front-End Web Developer</h3>
+      <h2 class="description">Front-End Web Developer</h2>
       <div class="cta">
-        <a href="#contact" class="btn">Let's Talk</a>
-        <a href="https://github.com/K-kibet" class="social" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <a href="" id="profile-link" class="social" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/kibetkorir" class="social" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#contact" class="btn" title="resume" target="_blank">RESUME</a>
+        <a href="https://github.com/Kkibe" class="social" target="_blank" title="github Kkibet"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.freecodecamp.org/kkibet" id="profile-link" class="social" target="_blank" title="freecodecamp Kkibet"><i class="fab fa-free-code-camp fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/kibetkorir" class="social" target="_blank" title="linkedin kkibet"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.youtube.com/@codespear" class="social" target="_blank" title="youtube codespear"><i class="fab fa-youtube fa-2x"></i></a>
       </div>
     </div>
   </div>
@@ -53,64 +55,77 @@
     <div class="container">
       <h1 class="section-title">Recent <span class="yellow-text">Projects</span></h1>
       <div id="project-grid">
-        
         <div class="project-tile">
-          <div class="project-thumbnail documentation-image"></div>
+          <img src="./assets/taxa.png" class="project-thumbnail" alt="preview-mage"></img>
           <div class="project-details">
-            <p class="project-title">QL Downloader - Web Video Downloader</p>
-            <p class="project-tools">HTML | REACT | SASS</p>
+            <h2 class="project-title">Taxa Kenya - Tax Justice Organization Website</h2>
+            <p class="project-tools">HTML | SCSS | REACT | FIREBASE | DARAJA API</p>
           </div>
           <div class="project-links">
-            <a href="https://codepen.io/Senatrius/pen/QWWzpEK" class="link code-link" target="_blank"><i class="fas fa-code"></i> Code</a>
-            <a href="https://codepen.io/Senatrius/full/QWWzpEK" class="link page-link" target="_blank"><i class="fas fa-link"></i> Live</a>
+            <a href="https://github.com/Kkibe/taxa-kenya" class="link" target="_blank" title="taxa repository"><i class="fas fa-code"></i> Github</a>
+            <a href="https://taxa-kenya.onrender.com/" class="link" target="_blank" title="taxa"><i class="fas fa-link"></i> Live</a>
           </div>
         </div>
         
-        
         <div class="project-tile">
-          <div class="project-thumbnail landing-image">
-            
-            <img class="project-image" src="https://github.com/K-kibet/weather-app/blob/main/src/assets/Screenshot%202022-09-24%208.07.56%20PM.png" alt="" />
-          </div>
+          <img src="./assets/qldownloader.png" class="project-thumbnail" alt="preview-mage"></img>
           <div class="project-details">
-            <p class="project-title">Coongames - Browser Based Gaming Site</p>
-            <p class="project-tools">HTML | SCSS | REACT</p>
+            <h2 class="project-title">QL Downloader - Web Video Streaming & Downloading</h2>
+            <p class="project-tools">HTML | REACT | SASS | YouTube API</p>
           </div>
           <div class="project-links">
-            <a href="https://codepen.io/Senatrius/pen/gOOdVWm" class="link code-link" target="_blank"><i class="fas fa-code"></i> Code</a>
-            <a href="https://codepen.io/Senatrius/full/gOOdVWm" class="link page-link" target="_blank"><i class="fas fa-link"></i> Live</a>
+            <a href="https://github.com/Kkibe/qldownloader-client" class="link" target="_blank" title="github repository"><i class="fas fa-code"></i> Code</a>
+            <a href="https://qldownloader-client.onrender.com/" class="link" target="_blank" title="ql downloader"><i class="fas fa-link"></i> Live</a>
           </div>
         </div>
-        <div class="project-tile">
-          <div class="project-thumbnail survey-image">
-            
 
-            <div class="project-thumbnail landing-image">
-          </div>
+        <div class="project-tile">
+          <img src="./assets/codespear.png" class="project-thumbnail" alt="preview-mage"></img>
           <div class="project-details">
-            <p class="project-title">Weatherly - Real-Time Weather Updates</p>
-            <p class="project-tools">REACT | STYLED-COMPONENTS</p>
+            <h2 class="project-title">Codespear - Front-End developer hub for learning web technologies.</h2>
+            <p class="project-tools">HTML | SCSS | REACT | FLEX-BOX | G.Sheets</p>
           </div>
           <div class="project-links">
-            <a href="https://github.com/K-kibet/weather-app/blob/main/src/assets/Screenshot%202022-09-24%208.07.56%20PM.png" class="link code-link" target="_blank"><i class="fas fa-code"></i> Code</a>
-            <a href="https://codepen.io/Senatrius/full/pooLyyW" class="link page-link" target="_blank"><i class="fas fa-link"></i> Live</a>
+            <a href="https://github.com/Kkibe/codespear-client" class="link" target="_blank" title="github repository"><i class="fas fa-code"></i> Code</a>
+            <a href="https://codespear.onrender.com/" class="link" target="_blank" title="codespear"><i class="fas fa-link"></i> Live</a>
           </div>
         </div>
         <div class="project-tile">
-          <div class="project-thumbnail tribute-image">
-            
-
-          <div class="project-thumbnail landing-image">
-          </div>
+          <img src="./assets/bigbuilder.png" class="project-thumbnail" alt="preview-mage"></img>
           <div class="project-details">
-            <p class="project-title">Tribute Page</p>
-            <p class="project-tools">HTML | CSS</p>
+            <h2 class="project-title">BigBuilder - AI Tools for building and customizing arts and designs</h2>
+            <p class="project-tools">SCSS | REACT | JSX | MaterialUI | Firebase</p>
           </div>
           <div class="project-links">
-            <a href="https://codepen.io/Senatrius/pen/yLLPpEj" class="link code-link" target="_blank"><i class="fas fa-code"></i> Code</a>
-            <a href="https://codepen.io/Senatrius/full/yLLPpEj" class="link page-link" target="_blank"><i class="fas fa-link"></i> Live</a>
+            <a href="https://github.com/Kkibe/bigbuilder" class="link" target="_blank" title="github repository"><i class="fas fa-code"></i> Code</a>
+            <a href="https://bigbuilder.onrender.com/" class="link" target="_blank" title="bigbuilder"><i class="fas fa-link"></i> Live</a>
           </div>
         </div>
+        
+        <div class="project-tile">
+          <img src="./assets/elgon-cars.png" class="project-thumbnail" alt="preview-mage"/>
+          <div class="project-details">
+            <h2 class="project-title">Elgon Cars - New and used car review & marketplace</h2>
+            <p class="project-tools">HTML | SCSS | MERN Stack</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Kkibe/elgoncars-client" class="link" target="_blank" title="github repository"><i class="fas fa-code"></i> Code</a>
+            <a href="https://elgoncars-client.onrender.com/" class="link" target="_blank" title="elgon cars"><i class="fas fa-link"></i> Live</a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <img src="./assets/coongames.png" class="project-thumbnail" alt="preview-mage"></img>
+          <div class="project-details">
+            <h2 class="project-title">Coongames - Browser Based Gaming Site</h2>
+            <p class="project-tools">HTML | SCSS | REACT | MERN Stack</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Kkibe/coongames-client" class="link" target="_blank" title="github repository"><i class="fas fa-code"></i> Code</a>
+            <a href="https://coongames-client.onrender.com/" class="link" target="_blank"><i class="fas fa-link" title="coongames"></i> Live</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -125,11 +140,11 @@
         <form>
           <div class="input-block">
             <label for="name">Name</label>
-            <input type="text" id="name">
+            <input type="text" id="name" name="name" required>
           </div>
           <div class="input-block">
             <label for="subject">Subject</label>
-            <input type="text" id="subject">
+            <input type="text" id="subject" name="subject" required>
           </div>
           <div class="input-block">
             <label for="message">Message</label>
@@ -142,6 +157,6 @@
   </div>
 </body>
 <!-- partial -->
-  
+<script src="https://kit.fontawesome.com/a33a0316b0.js" crossorigin="anonymous"></script>
 </body>
 </html>

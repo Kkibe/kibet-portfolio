@@ -1,14 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap");
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Raleway, sans-serif;
+  /*font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+  font-family: 'Courier New', Courier, monospace;
   scroll-behavior: smooth;
 }
 
 body {
   min-width: 320px;
+}
+
+
+.video{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  object-fit: fill;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  z-index: -1;
+  opacity: .2;
 }
 
 .container {
@@ -24,7 +40,7 @@ body {
 }
 
 .yellow-text {
-  color: #EEF205;
+  color: #FFBD59;
 }
 
 .section-title {
@@ -33,41 +49,34 @@ body {
   font-weight: 500;
 }
 
-#navbar {
+nav {
   position: fixed;
+  width: 100%;
+  height: auto;
+  background: #000000;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
-  height: auto;
-  padding-right: 3.5rem;
-  background: #000000;
 }
-#navbar ul {
-  display: flex;
-}
-#navbar li {
-  padding: 1rem 0 1rem 2.5rem;
-  list-style: none;
-}
-#navbar .nav-link {
+
+nav > a {
   transition: 0.1s linear;
   font-size: 1.1rem;
   color: #ECECEC;
   text-decoration: none;
   font-weight: 500;
+  padding: 1rem 0;
+  margin: 5px 20px;
 }
-#navbar .nav-link:hover {
-  color: #EEF205;
-}
-#navbar .nav-link:active {
-  color: #bdc004;
+nav a:hover, nav a:active {
+  color: #FFBD59;
 }
 
 #welcome-section {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(180deg, #000000 0%, rgba(8, 8, 8, 0.5) 20%, rgba(8, 8, 8, 0.6) 80%, #000000 100%), url(https://i.imgur.com/qhNzTM0.jpg) no-repeat center center;
+  background: linear-gradient(180deg,  rgba(8, 8, 8, 0.3) 20%, rgba(8, 8, 8, 0.4) 80%, #000000 100%), no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -77,13 +86,13 @@ body {
 }
 #welcome-section .title {
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-bottom: -1rem;
 }
 #welcome-section .description {
   font-weight: 500;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  bottom: 1rem 0;
 }
 
 .cta {
@@ -99,12 +108,12 @@ body {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #EEF205;
-  border: 2px solid #EEF205;
+  color: #FFBD59;
+  border: 2px solid #FFBD59;
   border-radius: 1000px;
 }
 .cta .btn:hover {
-  background: #EEF205;
+  background: #FFBD59;
   color: #000000;
 }
 .cta .btn:active {
@@ -115,16 +124,15 @@ body {
   transition: 0.05s linear;
   color: #ECECEC;
 }
-.cta .social:hover {
-  color: #EEF205;
+.cta .social:hover, .cta .social:active {
+  color: #FFBD59;
 }
-.cta .social:active {
-  color: #bdc004;
-}
+
 
 #about {
   height: auto;
   background: #000000;
+  background: rgba(8, 8, 8, 0.4), no-repeat center center;
 }
 #about p:first-of-type {
   margin-bottom: 0.9rem;
@@ -133,7 +141,7 @@ body {
 #projects {
   width: 100%;
   height: auto;
-  background: linear-gradient(180deg, #000000 0%, rgba(8, 8, 8, 0.5) 20%, rgba(8, 8, 8, 0.6) 80%, #000000 100%), url(https://i.imgur.com/0y4QxHh.jpg) no-repeat center center;
+  background: linear-gradient(180deg, #000000 0%, rgba(8, 8, 8, 0.3) 20%, rgba(8, 8, 8, 0.4) 80%, #000000 100%), url(https://i.imgur.com/0y4QxHh.jpg) no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -150,34 +158,38 @@ body {
   background: #ECECEC;
   color: #000000;
   height: auto;
+  border-radius: 5px;
+  padding: 3px 3px;
+}
+
+
+.project-tools{
+  font-family: "Bungee";
+  color: transparent;
+  background-image: linear-gradient(90deg, #FFBD59, #f37055, #ef4e7b, #a166ab, #c165dd, #5581f1);
+  filter: brightness(120%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  position: relative;
+  animation: bg 10s ease infinite;
+  background-size: 300% 100%;
+  z-index:1;
 }
 
 .project-thumbnail {
   width: 100%;
-  height: 0;
-  padding-top: 56.25%;
-  border-bottom: 3px solid #000000;
+  max-height: 200px;
+  object-fit: fill;
+  object-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-bottom: 2px solid #000000;
 }
 
-.documentation-image {
-  background: url(https://github.com/K-kibet/weather-app/blob/main/src/assets/Screenshot%202022-09-24%208.07.56%20PM.png) no-repeat top left;
-  background-size: cover;
-}
-
-.landing-image {
-  background: url(https://github.com/K-kibet/weather-app/blob/main/src/assets/Screenshot%202022-09-24%208.07.56%20PM.png) no-repeat top left;
-  background-size: cover;
-}
-
-.survey-image {
-  background: url(https://i.gyazo.com/4bb879a4a935c7758e0da7a7f6bc5472.png) no-repeat top left;
-  background-size: cover;
-}
-
-.tribute-image {
-  background: url(https://i.gyazo.com/10aa6d5318e8b15684c65ea7e9abec41.png) no-repeat top left;
-  background-size: cover;
-}
 
 .project-details {
   padding: 0.5rem;
@@ -235,11 +247,11 @@ body {
   width: 100%;
   background: #060606;
   border: none;
-  border-bottom: 2px solid #EEF205;
+  border-bottom: 2px solid #FFBD59;
   padding: 0.5rem 0.5rem;
   margin-bottom: 1.5rem;
   margin-top: 0.25rem;
-  color: #EEF205;
+  color: #FFBD59;
   font-size: 1rem;
   resize: vertical;
   max-height: 250px;
@@ -255,46 +267,30 @@ body {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #EEF205;
-  border: 2px solid #EEF205;
+  color: #FFBD59;
+  border: 2px solid #FFBD59;
   border-radius: 1000px;
 }
 .form-container .submit-btn:hover {
-  background: #EEF205;
+  background: #FFBD59;
   color: #000000;
 }
 .form-container .submit-btn:active {
-  border: 2px solid #bdc004;
-  background: #bdc004;
+  border: 2px solid #FFBD59;
+  background: #FFBD59;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 756px) {
-  #navbar {
-    justify-content: center;
-    padding: 0;
-  }
-  #navbar li:first-of-type {
-    padding-left: 0;
-  }
 
+
+@media screen and (max-width: 756px) {
   .container {
     padding: 3rem 0;
   }
 }
 @media screen and (max-width: 580px) {
-  #navbar {
-    position: relative;
-    background: #000000;
-  }
-  #navbar ul {
-    display: flex;
-    flex-direction: column;
-  }
-  #navbar li {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    text-align: center;
+  nav a{
+    margin: 5px 5px;
   }
 
   .container {
@@ -330,4 +326,22 @@ body {
   .form-container .submit-btn {
     width: 100%;
   }
+}
+
+@keyframes bg {
+	0% {
+		background-position: 0% 100%;
+	}
+	25% {
+		background-position: 50% 100%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	75% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 0% 100%;
+	}
 }
